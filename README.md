@@ -1,3 +1,3 @@
 # sanskrit_web_app
 
-This is the scripts page.
+A learning tool for all those interesting in learning the Sanskrit language. 
