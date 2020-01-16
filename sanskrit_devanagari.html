@@ -42,7 +42,7 @@
   <body>
     <!-- nav bar -->
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
+      <header class="masthead">
         <div class="inner">
           <h3 class="masthead-brand">Sanskrit App</h3>
           <nav class="nav nav-masthead justify-content-center">
@@ -56,12 +56,27 @@
         </div>
 
       </header>
+      <div class="inner cover">
+        <center> <h3 style="">Devanagari Keyboard</h3>
+      </div>
+      <div class="inner vertical-center">
+        <!-- <h3>Devanagari Keyboard</h3> -->
+        <textarea id="transliterateTextarea" style="width:600px;height:200px;"></textarea>
 
-      <div>
-        <h3 class="cover-heading">Devanagari Keyboard</h3>
-        <textarea id="transliterateTextarea" style="width:600px;height:200px; margin:auto auto;"></textarea>
     </div>
+  <center><button type="button" class="btn btn-secondary"style="width:150">Latin Keyboard</button>
   </div>
   </body>
-
 </html>
+
+<style>
+.vertical-center {
+  /* min-height: 100%;
+  min-height: 100vh; */
+  margin: auto auto;
+  margin-top:50;
+  margin-bottom: 50;
+  display:flex;
+  align-items: center;
+}
+</style>
