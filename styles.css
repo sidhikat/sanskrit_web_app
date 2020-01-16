@@ -20,7 +20,6 @@ a:hover {
   /* border-radius: 90%; */
 }
 
-
 /*
  * Base structure
  */
@@ -109,18 +108,18 @@ body {
   .main,.row {
       margin: auto;
       position:absolute;
-      top: 0;
+      top: 50%;
       right: 0;
       bottom: 0;
       left: 0;
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       border-radius: 40%;
   }
 
   /* Set the style of menu button */
   .main {
-      background-color: gray;
+      background-color: #1D5176;
       cursor: pointer;
       z-index: 50;
   }
@@ -129,17 +128,17 @@ body {
       width of menu button */
   .main .title {
       margin: auto;
-      position: absolute;
+      position: auto;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 80px;
-      font-size: 16px;
+      font-size: 24px;
       line-height: 80px;
       text-align: center;
-      color: lime;
+      color: white;
   }
 
   /* Set position, height and width
@@ -151,20 +150,18 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
-      width: 45px;
+      width: 150px;
       height: 45px;
-      border-radius: 40%;
+      border-radius: 45%;
       transition: all 0.4s ease-in;
-  }
-  .button i {
-      width: 100%;
       font-size: 20px;
-      line-height: 50px;
+      line-height: 0px;
       text-align: center;
-      color: white;
+      color: #1A274B;
+      padding: 20px;
   }
   .main {
-      border:2px solid lime;
+      border:2px solid black;
   }
   .button {
       border:2px solid black;
@@ -175,33 +172,39 @@ body {
       opacity:0.8;
   }
   #check:checked ~ .main + .row .button:nth-of-type(1) {
-      top: -100%;
-      left: -480%;
-      background-color: green;
+      top: -0%;
+      left: -500%;
+      background-color: #1D5176;
       transition-delay:0.6s;
+      color:white;
   }
   #check:checked ~ .main + .row .button:nth-of-type(2) {
-      top: -230%;
-      left: -250%;
-      background-color: green;
+      top: -250%;
+      left: -300%;
+      background-color: #1D5176;
       transition-delay:0.4s;
+      color:white;
   }
   #check:checked ~ .main + .row .button:nth-of-type(3) {
-      top: -280%;
-      background-color: green;
+      top: -500%;
+      left: -40%;
+      background-color: #1D5176;
       transition-delay:0.2s;
+      color:white;
   }
   #check:checked ~ .main + .row .button:nth-of-type(4) {
-      top: -230%;
-      right: -250%;
-      background-color: green;
+      top: -250%;
+      right: -300%;
+      background-color: #1D5176;
       transition-delay:0.4s;
+      color:white;
   }
   #check:checked ~ .main + .row .button:nth-of-type(5) {
-      top: -100%;
+      top: -0%;
       right: -480%;
-      background-color: green;
+      background-color: #1D5176;
       transition-delay:0.6s;
+      color:white;
   }
 
 /*
