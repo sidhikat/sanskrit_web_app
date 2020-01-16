@@ -37,6 +37,12 @@
         control.makeTransliteratable(['transliterateTextarea']);
       }
       google.setOnLoadCallback(onLoad);
+
+      function insertText(elemID, text)
+      {
+        var elem = document.getElementById(elemID);
+        elem.innerHTML += text;
+      }
     </script>
   </head>
   <body>
@@ -61,7 +67,7 @@
       </div>
       <div class="inner vertical-center">
         <!-- <h3>Devanagari Keyboard</h3> -->
-        <textarea id="transliterateTextarea" style="width:600px;height:200px;"></textarea>
+        <textarea id="transliterateTextarea" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
 
     </div>
   <center><button type="button" class="btn btn-secondary"style="width:150">Latin Keyboard</button>
@@ -79,7 +85,7 @@
   <td>nga</td>
   </tr>
   <tr>
-  <td><input type="button" class="bt" onclick="alpha('क')" value="क"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'क');" value="क"></td>
   <td><input type="button" class="bt" onclick="alpha('ख')" value="ख"></td>
   <td><input type="button" class="bt" onclick="alpha('ग')" value="ग"></td>
   <td><input type="button" class="bt" onclick="alpha('घ')" value="घ"></td>
