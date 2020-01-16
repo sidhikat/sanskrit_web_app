@@ -97,98 +97,76 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
-
 /*
 * Radial Menu
 */
-.radial-menu {
-  top: 50px;
-  left: 15px;
-  position: fixed;
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border-radius: 50%;
-  z-index: 20;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-}
+.row {
+          display:inline-block;
+          height:300px;
+          width:300px;
+          background:#d1d1d1;
+          border-radius:30%;
+          position:relative;
+          overflow:hidden;
+          border:2px solid black;
+      }
+      .row:before {
+          content:"";
+          position:absolute;
+          height:40%;
+          width:40%;
+          border-radius:50%;
+          background:white;
+          top:30%;
+          left:30%;
+          z-index:8;
+      }
+      .row a {
+          position:absolute;
+          padding:20px;
+          background:blue;
+          padding-bottom:50px;
+          font-size: 28px;
+      }
 
-.menu-item1 {
-  width: 60%;
-  height: 60%;
-  background-color: dimGray;
-  border-radius: 50%;
-  position: absolute;
-  color: white;
-  text-align: center;
-  line-height: 70px;
-  top: 25%;
-  left: 25%;
-  z-index: 19;
-  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-  position: absolute;
-}
+      /* Set the position of button */
+      .row a:nth-child(1){
+          bottom:-10%;
+          left:50%;
+          transform:translateX(-50%);
+      }
 
-.menu-item2 {
-  width: 60%;
-  height: 60%;
-  background-color: dimGray;
-  border-radius: 50%;
-  position: absolute;
-  color: white;
-  text-align: center;
-  line-height: 70px;
-  top: 25%;
-  left: 25%;
-  z-index: 19;
-  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
-}
+      /* Set the position of button */
+      .row a:nth-child(2){
+          bottom:40%;
+          left:20%; /*towards inside circle */
+          transform:translateX(-50%) rotate(72deg);
+      }
 
-.menu-item3 {
-  width: 60%;
-  height: 60%;
-  background-color: dimGray;
-  border-radius: 50%;
-  position: absolute;
-  color: white;
-  text-align: center;
-  line-height: 70px;
-  top: 25%;
-  left: 25%;
-  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
-}
+      /* Set the position of button script*/
+      .row a:nth-child(3){
+          bottom:28%;
+          left:90%;
+          transform:translateX(-50%) rotate(-72deg);
+      }
 
-.menu-item4 {
-  width: 60%;
-  height: 60%;
-  background-color: dimGray;
-  border-radius: 50%;
-  position: absolute;
-  color: white;
-  text-align: center;
-  line-height: 70px;
-  top: 25%;
-  left: 25%;
-  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
-}
-.mask {
-  top: 50px;
-  left: 15px;
-  width: 100px;
-  height: 100px;
-  background: darkSlateGray;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 21;
-  color: white;
-  text-align: center;
-  line-height: 120px;
-  cursor: pointer;
-  position: fixed;
-}
+      /* Set the position of button */
+      .row a:nth-child(4) {
+          bottom:60%;
+          left:80%;
+          transform:translateX(-50%)rotate(12deg);
+      }
+
+      .row a:nth-child(5) {
+          bottom:60%;
+          left:30%;
+          transform:translateX(-50%)rotate(-12deg);
+      }
+
+      /* Set style when mouse move over */
+      .row a:hover {
+          background:green;
+
 /*
  * Footer
  */
