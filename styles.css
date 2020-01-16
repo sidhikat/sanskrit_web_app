@@ -100,72 +100,109 @@ body {
 /*
 * Radial Menu
 */
-.row {
-          display:inline-block;
-          height:300px;
-          width:300px;
-          background:#d1d1d1;
-          border-radius:30%;
-          position:relative;
-          overflow:hidden;
-          border:2px solid black;
-      }
-      .row:before {
-          content:"";
-          position:absolute;
-          height:40%;
-          width:40%;
-          border-radius:50%;
-          background:white;
-          top:30%;
-          left:30%;
-          z-index:8;
-      }
-      .row a {
-          position:absolute;
-          padding:20px;
-          background:blue;
-          padding-bottom:50px;
-          font-size: 28px;
-      }
 
-      /* Set the position of button */
-      .row a:nth-child(1){
-          bottom:-10%;
-          left:50%;
-          transform:translateX(-50%);
-      }
+  #check {
+      display: none;
+  }
 
-      /* Set the position of button */
-      .row a:nth-child(2){
-          bottom:40%;
-          left:20%; /*towards inside circle */
-          transform:translateX(-50%) rotate(72deg);
-      }
+  /* Set the icon width, height and position */
+  .main,.row {
+      margin: auto;
+      position:absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 40%;
+  }
 
-      /* Set the position of button script*/
-      .row a:nth-child(3){
-          bottom:28%;
-          left:90%;
-          transform:translateX(-50%) rotate(-72deg);
-      }
+  /* Set the style of menu button */
+  .main {
+      background-color: gray;
+      cursor: pointer;
+      z-index: 50;
+  }
 
-      /* Set the position of button */
-      .row a:nth-child(4) {
-          bottom:60%;
-          left:80%;
-          transform:translateX(-50%)rotate(12deg);
-      }
+  /* Set the position, height and
+      width of menu button */
+  .main .title {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      font-size: 16px;
+      line-height: 80px;
+      text-align: center;
+      color: lime;
+  }
 
-      .row a:nth-child(5) {
-          bottom:60%;
-          left:30%;
-          transform:translateX(-50%)rotate(-12deg);
-      }
+  /* Set position, height and width
+      of buttons */
+  .button {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 40%;
+      transition: all 0.4s ease-in;
+  }
+  .button i {
+      width: 100%;
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;
+      color: white;
+  }
+  .main {
+      border:2px solid lime;
+  }
+  .button {
+      border:2px solid black;
+  }
 
-      /* Set style when mouse move over */
-      .row a:hover {
-          background:green;
+  /* Positioning of buttons */
+  #check:checked ~ .main + .row .button {
+      opacity:0.8;
+  }
+  #check:checked ~ .main + .row .button:nth-of-type(1) {
+      top: -100%;
+      left: -480%;
+      background-color: green;
+      transition-delay:0.6s;
+  }
+  #check:checked ~ .main + .row .button:nth-of-type(2) {
+      top: -230%;
+      left: -250%;
+      background-color: green;
+      transition-delay:0.4s;
+  }
+  #check:checked ~ .main + .row .button:nth-of-type(3) {
+      top: -280%;
+      background-color: green;
+      transition-delay:0.2s;
+  }
+  #check:checked ~ .main + .row .button:nth-of-type(4) {
+      top: -230%;
+      right: -250%;
+      background-color: green;
+      transition-delay:0.4s;
+  }
+  #check:checked ~ .main + .row .button:nth-of-type(5) {
+      top: -100%;
+      right: -480%;
+      background-color: green;
+      transition-delay:0.6s;
+  }
 
 /*
  * Footer
