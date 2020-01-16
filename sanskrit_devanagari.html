@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Sanskrit App</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript">
+
+      // Load the Google Transliterate API
+      google.load("elements", "1", {
+            packages: "transliteration"
+          });
+
+      function onLoad() {
+        var options = {
+            sourceLanguage:
+                google.elements.transliteration.LanguageCode.ENGLISH,
+            destinationLanguage:
+                [google.elements.transliteration.LanguageCode.SANSKRIT],
+            shortcutKey: 'ctrl+g',
+            transliterationEnabled: true
+        };
+
+        // Create an instance on TransliterationControl with the required
+        // options.
+        var control =
+            new google.elements.transliteration.TransliterationControl(options);
+
+        // Enable transliteration in the textbox with id
+        // 'transliterateTextarea'.
+        control.makeTransliteratable(['transliterateTextarea']);
+      }
+      google.setOnLoadCallback(onLoad);
+    </script>
+  </head>
+  <body>
+    <!-- nav bar -->
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Sanskrit App</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Alphabet</a>
+            <a class="nav-link" href="#">Script</a>
+            <a class="nav-link" href="#">Phonetics</a>
+            <a class="nav-link" href="#">Sutras</a>
+            <a class="nav-link active" href="#">Transliteration Typing</a>
+          </nav>
+        </div>
+
+      </header>
+
+<br />
+      <div class="container">
+        <h3 class="cover-heading center">Devanagari Keyboard</h3>
+        <textarea id="transliterateTextarea" class= "center" style="width:600px;height:200px; margin:30 auto;"></textarea>
+    </div>
+    </div>
+  </body>
+
+</html>
