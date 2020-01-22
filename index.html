@@ -10,10 +10,14 @@
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- link to stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href=
+"https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
+<!-- nav bar -->
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
@@ -24,7 +28,7 @@
         <a class="nav-link" href="#">Script</a>
         <a class="nav-link" href="#">Phonetics</a>
         <a class="nav-link" href="#">Sutras</a>
-        <a class="nav-link" href="#">Typing</a>
+        <a class="nav-link" href="./sanskrit_devanagari.html">Transliteration Typing</a>
       </nav>
     </div>
   </header>
@@ -36,22 +40,26 @@
     <br />
     <br />
     <br />
-    <div class="row lead">
-      <div class="col-md-4"><a href="#" class="btn btn-lg btn-secondary">Alphabet</a></div>
-      <div class="col-md-4"><a href="#" class="btn btn-lg btn-secondary">Script</a></div>
-      <div class="col-md-4"><a href="#" class="btn btn-lg btn-secondary">Phonetics</a></div>
+
+    <input id="check" type="checkbox">
+
+    <label class="main" for="check">
+        <div class="title">
+            <i class="fa fa-home"></i>
+        </div>
+    </label>
+
+    <div class= "row lead">
+        <a class="button" href="#"> Alphabet</a>
+        <a class="button" href="#">Script</a>
+        <a class="button" href="#">Phonetics</a>
+        <a class="button" href="#">Sutras</a>
+        <a class="button" href="#" >Transliteration</a>
     </div>
-    <br />
-    <br />
-    <div class="row lead">
-      <div class="col-sm-6"><a href="#" class="btn btn-lg btn-secondary" style="margin-left: 100px">Sutras</a></div>
-      <div class="col-sm-6"><a href="#" class="btn btn-lg btn-secondary" style="margin-left: 0px">Transliteration</a></div>
-
-    </div>
-
-
   </main>
 
+
+<!-- footer -->
   <footer class="mastfoot mt-auto">
     <div class="inner">
       <p>A footer if we wanted to give ourselves credit hehe</p>
