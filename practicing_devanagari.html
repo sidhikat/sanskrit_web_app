@@ -10,6 +10,9 @@
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- link to stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <!--link to p5js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+  <script src="sketch.js"></script>
 </head>
 
 <body>
@@ -30,23 +33,10 @@
   </header>
 
   <main role="main" class="inner cover">
-    <center><h1 class="cover-heading">Seven Different Scripts</h1></center>
+    <center><h1 class="cover-heading">Practicing Devanagari</h1></center>
+    <center><div id='drawing_container'></div></center>
     <br />
-        <center> <button type="button" class="btn btn-secondary">Devanāgarī (most common Sanskrit script)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">IAST (most common Roman Transliteration scheme with diacritics)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">Harvard-Kyoto (most common Roman Transliteration scheme without diacritics)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">ISO 15919 (Roman Transliteration)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">ITRANS (Roman Transliteration) (very common for laypeople)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">Velthius (Roman Transliteration, no case sensitivity)</button> </center>
-    <br />
-        <center> <button type="button" class="btn btn-secondary">SLP1 (Roman Transliteration, ASCII character for each letter)</button> </center>
-    <br />
-
+    <center>Press 'Enter' to reset</center>
 
   </main>
 
