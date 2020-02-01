@@ -8,42 +8,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://www.google.com/jsapi">
-    </script>
-    <script type="text/javascript">
+    <script src="./sanscript.js"></script>
 
-      // Load the Google Transliterate API
-      google.load("elements", "1", {
-            packages: "transliteration"
-          });
 
-      function onLoad() {
-        var options = {
-            sourceLanguage:
-                google.elements.transliteration.LanguageCode.ENGLISH,
-            destinationLanguage:
-                [google.elements.transliteration.LanguageCode.SANSKRIT],
-            shortcutKey: 'ctrl+g',
-            transliterationEnabled: true
-        };
-
-        // Create an instance on TransliterationControl with the required
-        // options.
-        var control =
-            new google.elements.transliteration.TransliterationControl(options);
-
-        // Enable transliteration in the textbox with id
-        // 'transliterateTextarea'.
-        control.makeTransliteratable(['transliterateTextarea']);
-      }
-      google.setOnLoadCallback(onLoad);
-
-      function insertText(elemID, text)
-      {
-        var elem = document.getElementById(elemID);
-        elem.value += text;
-      }
-    </script>
   </head>
   <body>
     <!-- nav bar -->
@@ -68,7 +35,7 @@
       </div>
       <div class="inner vertical-center">
         <!-- <h3>Devanagari Keyboard</h3> -->
-        <textarea id="transliterateTextarea" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
+        <textarea id="transliterateTextarea" onkeyup="convert()" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
 
     </div>
   <center><button type="button" class="btn btn-secondary" onclick="window.location.href = './latin_keyboard.html'" style="width:150">Latin Keyboard</button>
@@ -313,4 +280,27 @@
 
 </div>
   </body>
+
+
+  <script type="text/javascript">
+
+  function convert(){
+
+    var elem = document.getElementById('transliterateTextarea');
+    //runs conversion after spacebar is pressed
+    // if(elem.key === 'Spacebar'){
+      
+      elem.value = Sanscript.t(elem.value, 'hk', 'devanagari');
+    // }
+  }
+
+    function insertText(elemID, text)
+    {
+      var elem = document.getElementById(elemID);
+      elem.value += text;
+    }
+
+    //var myVar = setInterval(convert, 1000);
+
+  </script>
 </html>
