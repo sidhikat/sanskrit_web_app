@@ -35,7 +35,7 @@
       </div>
       <div class="inner vertical-center">
         <!-- <h3>Devanagari Keyboard</h3> -->
-        <textarea id="transliterateTextarea" onkeyup="convert()" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
+        <textarea id="transliterateTextarea" onkeydown="convert(event)" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
 
     </div>
   <center><button type="button" class="btn btn-secondary" onclick="window.location.href = './latin_keyboard.html'" style="width:150">Latin Keyboard</button>
@@ -284,14 +284,14 @@
 
   <script type="text/javascript">
 
-  function convert(){
+  function convert(event){
 
     var elem = document.getElementById('transliterateTextarea');
     //runs conversion after spacebar is pressed
-    // if(elem.key === 'Spacebar'){
-      
+    if(event.keyCode == 32){
+
       elem.value = Sanscript.t(elem.value, 'hk', 'devanagari');
-    // }
+    }
   }
 
     function insertText(elemID, text)
