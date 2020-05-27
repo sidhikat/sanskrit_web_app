@@ -1,0 +1,385 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SwatSanskrit</title>
+  <!-- link to bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- link to stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href=
+"https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- nav bar -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">SwatSanskrit</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="./index.html">Home</a>
+        <a class="nav-link" href="./alphabet.html">Alphabet</a>
+        <a class="nav-link" href="./scripts.html">Script</a>
+        <a class="nav-link" href="#">Phonetics</a>
+        <a class="nav-link" href="./sutras.html">Sutras</a>
+        <a class="nav-link" href="./devanagari_keyboard.html">Transliteration Typing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover" style="margin-top:10%">
+    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'alphabet.html'"
+    style="width:150; margin-left:35%">Alphabet</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href = 'alphabet_explanation.html'"
+    style="width:150;margin-left:5%">Explanation</button>
+    <button type="button" class="btn btn-secondary" onclick="#"
+    style="width:150;margin-left:5%">Game</button>
+
+    <br />
+    <br />
+
+    <div class="table_of_contents" style="width:25%">
+      <a href="#intro" class="list-group-item list-group-item-action ">Introduction</a>
+      <a href="#vowels-intro" class="list-group-item list-group-item-action">Vowels</a>
+      <a href="#duration" class="list-group-item list-group-item-action">Vowels - Duration</a>
+      <a href="#pitch" class="list-group-item list-group-item-action">Vowels - Pitch</a>
+      <a href="#nasal" class="list-group-item list-group-item-action">Vowels - Nasalization</a>
+      <a href="#conclusion" class="list-group-item list-group-item-action">Vowels - Conclusion</a>
+      <a href="#consonants" class="list-group-item list-group-item-action">Consonants</a>
+      <a href="#alphabet" class="list-group-item list-group-item-action">All of the letters of the alphabet</a>
+      <a href="#anupurvi" class="list-group-item list-group-item-action">Ānupūrvī</a>
+    </div>
+
+    <br />
+    <br />
+
+    <div>
+      <h5 class="display-4" id="intro">General Introduction</h5>
+      <p>Much time can be devoted to studying the Sanskrit alphabet and all its
+        features. Here, we will discuss the most relevant features for the study of
+        Sanskrit grammar, including its native script, Devanāgarī. The Sanskrit alphabet is
+        a set of sounds (technically known as phonemes) that can be put together to form
+        spoken words. Its writing system is a collection of visual representations of these
+        sounds, arranged into syllables. A “letter” and its sound are not two independent
+        entities in Sanskrit. In English, for example, the letter “a” is an independent
+        entity that contains within it the potential for multiple sounds, such as the “a” in
+        “apple”, “car”, “ace”, or “human”. In Sanskrit, one letter contains only one
+        possible phoneme, so there is a one-to-one mapping of sounds and letters in the
+        alphabet.
+      </p>
+      <p>
+      The script for writing Sanskrit can be any set of squiggly lines on a page, as
+      long as it accurately represents all the sounds of the alphabet. For visually
+      representing the Sanskrit alphabet, the most common script today is Devanāgarī.
+      Note that different languages employ different types of writing systems. The
+      Sanskrit writing system is known as a syllabic alphabet, alphasyllabary, or
+      abugida. We have generically called it the Sanskrit “alphabet” because that is
+      common parlance.
+      </p>
+      <p>
+        Although the script can be anything, it is still recommended that you learn
+        Devanāgarī because most of what is written in Sanskrit today can be found in that
+        script. Devanāgarī is not terribly important for representing Sanskrit, considering
+        there is no provision in Sanskrit literature for the codification of its script.
+        Learning it here is more to give you practice so that when you go out into the
+        world of Sanskrit, you can read most of what is written in the language.
+      </p>
+      <p>
+        At the same time, there are several other scripts used to represent Sanskrit
+      sounds. An increasingly common script being used to represent the Sanskrit
+      alphabet is called IAST, the International Alphabet of Sanskrit Transliteration.
+      This is the script we have been using so far to write Sanskrit words. IAST is an
+      especially important script to learn for Sanskrit, especially if you are learning in
+      the medium of English. Therefore, we should also learn that script along with
+      Devanāgarī.
+    </p>
+    <p>
+      Now on to the alphabet. A single letter in the Sanskrit alphabet is known as a
+      varṇa or akṣara. These can be of two types: vowel (svara) or consonant
+      (vyañjana).
+    </p>
+  </div>
+  <div>
+    <h5 class="display-4" id="vowels-intro">Vowels - Introduction</h5>
+    <p>
+      A svara is defined in Sanskrit as svayaṁ rājate iti svarāḥ (Literally, “that which rules
+    itself or shines forth by itself is called a svara.”). Those sounds that can exist on their
+    own without the help of any other sound are known as svara. Try saying
+    “a” (pronounced “uh”) and hold the sound in your mouth. Do you feel how it does not
+    need the help of any other sound to exist? On the other hand, try saying the sound “ga”
+    and notice that without the help of the “a”, you would not be able to pronounce the
+    sound “g”. This is how you can recognize something to be a svara. There are nine svara-s
+    in Sanskrit. These are अ (a), इ (i), उ (u), ऋ (ṛ), ऌ (lṛ), ए (e), ओ (o), ऐ (ai), and औ (au). If you
+    have studied Sanskrit before and feel that some vowels (such as आ (ā), ई (ī), etc.) are
+    missing here, don’t worry: we are getting to that now.
+    </p>
+    <p>
+      In Sanskrit, each vowel has multiple variations depending on how long it is spoken
+    for, which pitch it is spoken at, and whether it is nasalized. These variations allow for
+    there to be a huge number of vowel pronunciations in Sanskrit. Let us take a look at the
+    classifications below.
+    </p>
+  </div>
+  <div>
+    <h5 class="display-4" id="duration">Vowels - Duration</h5>
+    <p>A vowel can be held for one, two, or more than two “beats” (known as mātrā-s) in
+      Sanskrit. Thus a table can be made that looks like the following:
+    </p>
+    <div>
+      <img src="vowel_duration.png" class="img-fluid" style="width:60%" alt="Responsive image">
+    </div>
+    <p>
+      As you can see, अ, इ, उ, and ऋ all have all three durations. ऌ only has short and prolated
+      forms (according to the Sanskrit grammatical tradition, this is because the long form of
+      ऌ is simply never seen anywhere in the Sanskrit corpus). ए, ओ, ऐ, and औ only have long
+      and prolated forms, because they are naturally never short.
+    </p>
+  </div>
+    <div>
+      <h5 class="display-4" id="pitch">Vowels - Pitch</h5>
+      <p>
+        Sanskrit vowels have three pitches. They can be spoken at a high (udātta), low
+        (anudātta), or medium (svarita) pitch. The exact frequencies of these pitches are defined
+        only relative to each other, and in Vedic chanting they are heard quite distinctly, because
+        they are preserved there. Classical Sanskrit in its written and spoken form does not
+        preserve pitch differentiation. The high pitch is written with an apostrophe-like mark
+        above the vowel, the low pitch is written with an underscore-like mark underneath the
+        vowel, and the medium pitch is written without any marker.
+      </p>
+    </div>
+    <div>
+      <h5 class="display-4" id="nasal">Vowels - Nasalization</h5>
+      <p>
+        Sanskrit vowels can be either nasalized (anunāsika) or non-nasalized (ananunāsika).
+        Think of this as saying the vowel through your nose, or not, respectively. We might
+        write a nasalized अ in very loose transliteration as something like “unh”. The nasalized
+        vowel is written with a crescent-like marker (known as a candrabindu) on top, like this:
+        अँ.
+      </p>
+    </div>
+    <div>
+      <h5 class="display-4" id="conclusion">Vowels - Conclusion</h5>
+      <p>
+        When we put these together, we see that the first four vowels have 18 forms each (3
+        durations, 3 pitches, and 2 nasalizations), and the rest have 12 forms each (2 durations, 3
+        pitches, and 2 nasalizations). This is a lot of vowels! But keep in mind, as you go
+        forward, that the 18 forms of अ are not considered separate from अ. They are considered
+        variations of the same vowel. Thus we may refer to all 18 of them with a single अ. All
+        forms of अ are known as the savarṇa letters of अ. Savarṇa literally means “similar
+        letter”, or “letter with similar properties”. Hence all 18 forms of अ are savarṇa with each
+        other, all 18 forms of इ are savarṇa with each other, and so on. This idea also applies to
+        consonants, but in a slightly different way.
+      </p>
+    </div>
+    <div>
+      <h5 class="display-4" id="consonants">Consonants</h5>
+      <p>
+        A vyañjana is defined in Sanskrit as anvag bhavati vyañjanam (Literally, “that which
+      follows an ac (vowel) is called a vyañjana.”). Those sounds that cannot be pronounced
+      on their own without the help of another sound are known as vyañjana, and are
+      subordinate to svara. There are 33 vyañjana-s in Sanskrit. They are arranged in the tables
+      that follow with some more technical terms for easy reference and learning.
+    </p>
+    <div>
+      <img src="touching_consonants.png" class="img-fluid" style="width:60%" alt="Responsive image">
+    </div>
+    <p>
+      This is a table of the core consonants of Sanskrit, known as sparśa. It has five rows and
+      five columns, labeled R1, R2, etc. and C1, C2, etc., respectively.
+    </p>
+    <p>
+      Each row is known as a varga and represents a location in the mouth where
+    consonants are made, and moves progressively forward in the mouth. Each location in
+    the mouth is known as a sthāna.
+    </p>
+    <ol>
+      <li>R1 is made in the throat, which is known as the kaṇṭha. These letters are called
+      velars or gutturals in English and kaṇṭhya in Sanskrit. R1 is known as the ka-varga
+      or simply, ku.</li>
+      <li>R2 is made in the soft palate, which is known as the tālu. These letters are called
+      palatals in English and tālavya in Sanskrit. R2 is known as the ca-varga or
+      simply, cu.</li>
+      <li>R3 is made in the hard palate, which is known as the mūrdhan. These letters are
+      called cerebrals or retroflex in English and mūrdhanya in Sanskrit. R3 is known
+      as the ṭa-varga or simply, ṭu.</li>
+      <li>R4 is made in the teeth, which are known as danta. These letters are called
+      dentals in English and dantya in Sanskrit. R4 is known as the ta-varga or simply,
+      tu.</li>
+      <li>R5 is made in the lips, which are known as oṣṭha. These letters are called labials
+      in English and oṣṭhya in Sanskrit. R5 is known as the pa-varga or simply, pu.</li>
+    </ol>
+    <p>
+      Notice that there is a shortcut name to refer to each of the rows. These are, ku, cu, ṭu,
+      tu, and pu. These shortcuts have a technical name too. They are known as udit. The
+      literal meaning of this word is less important right now, and will become clear on its
+      own. But know that the word udit is used to refer to any one of these five shortcuts.
+    </p>
+    <p>
+      Each column represents a particular combination of effort, known as a prayatna. We
+      will get into the details of sthāna and prayatna elsewhere. For now, let us talk about the
+      columns. Each column is made up of a particular voicing and aspiration. Voicing is
+      about whether you must use your voice to say a letter, and aspiration is about how
+      much breath you use to say a letter.
+    </p>
+    <p>
+      To explain voicing, think about whether you can hold your breath and say a letter
+      without any voice at all. For example, try saying “k” without using your breath at all,
+      and without any vowel sound attached. It is possible, right? You can vaguely make the
+      “k” sound without using your voice. Hence, this letter is called unvoiced. Now try the
+      same thing with “g”. Can you do it? It is impossible, because you need to use your voice
+      to be able to say it. Hence, this letter is called voiced.
+    </p>
+    <p>
+      As for aspiration, if you position your hand, palm towards you, approximately two
+    inches away from your mouth when you say a letter, then if the letter is unaspirated (no
+    breath) you should not feel any air on your palm. If it is aspirated (with breath), you
+    should feel a rush of air on your palm.
+    </p>
+    <ol>
+      <li>C1 is made up of unvoiced unaspirated consonants corresponding to the sthāna
+        of that row.</li>
+      <li>C2 is made up of unvoiced aspirated consonants corresponding to the sthāna of
+      that row.</li>
+      <li>C3 is made up of voiced unaspirated consonants corresponding to the sthāna of
+      that row.</li>
+      <li>C4 is made up of voiced aspirated consonants corresponding to the sthāna of that
+      row.</li>
+      <li>C5 is made up of voiced unaspirated nasal consonants corresponding to the
+      sthāna of that row.</li>
+    </ol>
+    <p>
+      Thus each row is made up of one of each of the following types of sounds, produced in
+      a single place in the mouth: unvoiced unaspirated, unvoiced aspirated, voiced
+      unaspirated, voiced aspirated, and a nasal.<br />
+      This is only 25 of the 33 consonants. What about the rest?
+    </p>
+    <p>
+      Now let us see the semivowels. These are known as antaḥstha and are four in
+      number. These are: य (ya), र (ra), ल (la), and व (va). They are called semivowels because
+      they have a sort of vowel quality to them but include a light touch in the mouth in order
+      to be produced. They are all voiced and unaspirated.
+    </p>
+    <p>
+      Next are the sibilants, known as ūṣman, and are three in number. These are: श (śa), ष
+      (ṣa), and स (sa). They are called sibilants because they make a hissing sound when they
+      are spoken. They are all unvoiced and aspirated.
+    </p>
+    <p>
+      Finally there is the pure aspirate, also part of the ūṣman category. This is: ह (ha). It is
+      called the pure aspirate because no other effort is required to produce it other than
+      pushing your breath out. It is considered voiced and aspirated.
+    </p>
+    <p>
+      Thus a new table may be prepared, putting the semivowels, sibilants, and pure
+      aspirate into their respective locations in the mouth.
+    </p>
+    <div>
+      <img src="all_consonants.png" class="img-fluid" style="width:60%" alt="Responsive image">
+    </div>
+    <p>
+      Notice that there is a new row here, labeled dantoṣṭha, in order to accommodate व.
+      Since व is pronounced using a combination of the teeth and the lips, it is technically
+      located in the dantoṣṭha (danta + oṣṭha). Notice also that now the production of all of the
+      letters fall into one or the other locations in the mouth. We have yet to add one more
+      section to this table: the vowels (yes, they also fall into the same sthāna-s as the rest of
+      the letters of the alphabet).
+    </p>
+  </div>
+  <div>
+    <h5 class="display-4" id="alphabet">All of the letters of the Alphabet</h5>
+    <div>
+      <img src="entire_alphabet.png" class="img-fluid" style="width:60%" alt="Responsive image">
+    </div>
+    <p>
+      Here you can see all the letters of the Sanskrit alphabet arranged by type and sthāna.
+      Notice the addition of two new rows to accommodate ए, ऐ, ओ, and औ. ए and ऐ are made
+      by combining the vowel sounds of the kaṇṭha and the tālu, and thus the place in the
+      mouth they are made is called the kaṇṭhatālu. ओ and औ are made by combining the
+      vowel sounds of the kaṇṭha and the oṣṭha, and thus the place in the mouth they are made
+      is called the kaṇṭhoṣṭha. One more point to note: C5 is also technically located in the
+      nāsikā ca, which means “the nose too”. Notice that when you say ङ, ञ, ण, न, and म, you
+      are not only pronouncing these sounds in their respective locations in the mouth, you
+      are also producing them through your nose, hence this special designation.
+    </p>
+    <p>
+      There are an additional two sounds that have not yet been included in our table.
+      These are the visarga, symbolized as something resembling a colon following a vowel
+      (like अः, इः, etc., or कः, तः, etc.) in devanāgarī and as the symbol ḥ in transliteration; and
+      the anusvāra, symbolized as a dot on top of a vowel (like अं, इं, etc., or कं, तं, etc.) in
+      devanāgarī and as the symbol ṁ in IAST transliteration. The word visarga literally means
+      a release of the breath, which follows any vowel. When you encounter a visarga, release
+      your breath while maintaining the shape of the last vowel. The anusvāra is called the
+      pure nasal, and is a nasal sound whose pronunciation corresponds to the sthāna of the
+      consonant that follows it. It will never occur without a following consonant.
+    </p>
+    <p>
+    Finally, there are two special sounds that are very rare to see in print, but
+    nevertheless are part of the lexicon of Sanskrit phonology, so must be stated here. These
+    are the jihvāmūlīya and the upadhmānīya. The jihvāmūlīya is the sound that the visarga
+    makes when it is followed by the letters क and ख. It is a half-visarga sound, which is
+    symbolized as “X” or “ẖ” in transliteration. To understand its sound, release your
+    breath, and while releasing, close your mouth onto the sound क. This is the jihvāmūlīya.
+    Similarly, the upadhmānīya is the sound that the visarga makes when it is followed by the
+    letters प and फ. It too is a half-visarga sound, which is symbolized as “X” or “ḫ” in
+    transliteration. To understand its sound, release your breath, and while releasing, close
+    your mouth onto the sound प. It sounds almost like the sound “f”. This is the
+    upadhmānīya.<br />
+    And those are all the letters of the Sanskrit alphabet!
+    </p>
+  </div>
+  <div>
+    <h5 class="display-4" id="anupurvi">Ānupūrvī</h5>
+    <p>
+      One very important concept in the study of Sanskrit is the ānupūrvī. This is the
+      breaking up of each word into its constituent individual letters and writing them next to
+      each other in order.
+    </p>
+    <p>
+      For example, the word राम has four letters in it, and can be written with its ānupūrvī
+      like this:
+    </p>
+    <p>
+     र् आ म् अ
+    </p>
+    <p>
+      Notice the little mark at the bottom of both consonants. This mark is called the
+      avasāna, and indicates a stop, or the removal of the vowel that follows the consonant in
+      its naturally written state (note that क by itself consists of क् and अ together). In IAST
+      transliteration, each vowel is written separately already. Rāma can be written as r ā m a,
+      and it was easy to tell from the original word. But in devanāgarī, sometimes it is not as
+      easy to tell. Thus the practice of ānupūrvī is extremely important when studying
+      Sanskrit. Soon, it will be second nature to you, and you will not need to worry about it.
+      But as you start out, practice doing it to every Sanskrit word you see.
+    </p>
+    <p>
+      What is the practice of ānupūrvī for? In Sanskrit grammar, you will find that many of
+      the operations you perform between a root and a suffix (or any two operating reactants)
+      are only performed on a localized set of letters. For example, when combining the root
+      nī with the suffix tṛc, even though we talk about combining an entire root with an entire
+      suffix, the truth is, the letter we operate on is only the ī in nī, so it looks like this: nī + tṛc,
+      and finally the change that occurs is ne + tṛc. As you can see, only one letter was
+      operated on. Now let us see it in devanāgarī: नी + तृच् —> ने + तृच्. If we don’t do the
+      ānupūrvī, we won’t be able to separate out the letters clearly enough to understand what
+      is being operated on. So we write it instead like this: न्इ + त्ऋ च्. Now it is as clear as the
+      IAST script. The importance of this practice cannot be overstated when entering into the
+      field of Sanskrit grammar.
+    </p>
+  </div>
+  </main>
+
+
+<!-- footer -->
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Created by Varun Khanna, Anya Chaudari, and Sidhika Tripathee</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

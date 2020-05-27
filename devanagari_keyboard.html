@@ -1,0 +1,305 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>SwatSanskrit</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="./sanscript.js"></script>
+
+  </head>
+  <body>
+    <!-- nav bar -->
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">SwatSanskrit</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" href="./index.html">Home</a>
+              <a class="nav-link" href="#">Alphabet</a>
+              <a class="nav-link" href="./scripts.html">Script</a>
+              <a class="nav-link" href="#">Phonetics</a>
+              <a class="nav-link" href="./sutras.html">Sutras</a>
+              <a class="nav-link" href="./devanagari_keyboard.html">Transliteration Typing</a>
+            </nav>
+          </div>
+        </header>
+
+      <div class="inner cover">
+        <center> <h3 style="">Devanāgarī Keyboard</h3>
+      </div>
+      <div class="inner vertical-center">
+        <!-- <h3>Devanagari Keyboard</h3> -->
+        <textarea id="transliterateTextarea" onkeydown="convert(event)" placeholder="Type or paste text here" style="width:600px;height:200px;"></textarea>
+
+    </div>
+  <center><button type="button" class="btn btn-secondary" onclick="window.location.href = './latin_keyboard.html'" style="width:150">Latin Keyboard</button>
+<div>
+  <table class="tab-kbd">
+  <tr>
+  <td style="width:10%;">
+  <table class="tab-kb">
+    <tbody>
+  <tr class="arial">
+  <td>ka</td>
+  <td>kha</td>
+  <td>ga</td>
+  <td>gha</td>
+  <td>ṅa</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'क');" value="क"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ख');" value="ख"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ग');" value="ग"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'घ');" value="घ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ङ');" value="ङ"></td>
+  </tr>
+  <tr class="arial">
+  <td>ca</td>
+  <td>cha</td>
+  <td>ja</td>
+  <td>jha</td>
+  <td>ña</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'च')" value="च"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'छ')" value="छ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ज')" value="ज"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'झ')" value="झ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ञ')" value="ञ"></td>
+  </tr>
+  <tr class="arial">
+  <td>ṭa</td>
+  <td>ṭha</td>
+  <td>ḍa</td>
+  <td>ḍha</td>
+  <td>ṇa</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ट')" value="ट"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ठ')" value="ठ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ड')" value="ड"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ढ')" value="ढ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ण')" value="ण"></td>
+  </tr>
+  <tr class="arial">
+  <td>ta</td>
+  <td>tha</td>
+  <td>da</td>
+  <td>dha</td>
+  <td>na</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'त')" value="त"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'थ')" value="थ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'द')" value="द"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ध')" value="ध"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'न')" value="न"></td>
+  </tr>
+  <tr class="arial">
+  <td>pa</td>
+  <td>pha</td>
+  <td>ba</td>
+  <td>bha</td>
+  <td>ma</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'प')" value="प"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'फ')" value="फ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ब')" value="ब"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'भ')" value="भ"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'म')" value="म"></td>
+  </tr>
+</tbody>
+</table>
+<td style= "width:10%;">
+<table class="tab-kb">
+  <tbody>
+  <tr class="arial">
+  <td>ya</td>
+  <td>ra</td>
+  <td>la</td>
+  <td>va</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'य')" value="य"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'र')" value="र"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ल')" value="ल"></td>
+  <td><input type="button" class="bt" onClick="insertText('transliterateTextarea', 'व')" value="व"></td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr class="arial">
+  <td>śa</td>
+  <td>ṣa</td>
+  <td>sa</td>
+
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'श')" value="श"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ष')" value="ष"></td>
+  <td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'स')" value="स"></td>
+
+  <td>&nbsp;</td>
+  </tr>
+</tbody>
+  </table>
+  </td>
+  <td style= "width:10%;">
+<table class="tab-kb">
+<tbody><tr class="arial">
+<td>a</td>
+<td>ā</td>
+<td>i</td>
+<td>ī</td>
+<td>u</td>
+<td>ū</td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'अ')" value="अ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'आ')" value="आ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'इ')" value="इ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ई')" value="ई"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'उ')" value="उ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ऊ')" value="ऊ"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ा')" value="ा"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ि')" value="ि"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ी')" value="ी"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ु')" value="ु"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ू')" value="ू"></td>
+</tr>
+</tbody></table>
+<table class="tab-kb">
+<tbody><tr class="arial">
+<td>ṛ</td>
+<td>ṝ</td>
+<td>lṛ</td>
+
+<td class="esps"></td>
+<td>e</td>
+<td>ai</td>
+<td>o</td>
+<td>au</td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ऋ')" value="ऋ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ॠ')" value="ॠ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ऌ')" value="ऌ"></td>
+
+<td>&nbsp;</td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ए')" value="ए"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ऐ')" value="ऐ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ओ')" value="ओ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'औ')" value="औ"></td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ृ')" value="ृ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ॄ')" value="ॄ"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea','ॢ')" value="ॢ"></td>
+
+<td>&nbsp;</td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'े')" value="े"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ै')" value="ै"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ो')" value="ो"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', 'ौ')" value="ौ"></td>
+</tr>
+</tbody>
+</table>
+
+<td style= "width:10%;">
+<table class="tab-kb">
+  <tbody>
+<table class="tab-kb">
+<tbody><tr>
+<td><input type="button" class="bt" title="udatta" onclick="insertText('transliterateTextarea',' ॑')" value="॑॑"></td>
+<td><input type="button" class="bt" title="anudatta" onclick="insertText('transliterateTextarea',' ॒')" value="॒"></td>
+<td><input type="button" class="bt" title="accent grave" onclick="insertText('transliterateTextarea', '॓')" value="॓"></td>
+<td><input type="button" class="bt" title="accent aigu" onclick="insertText('transliterateTextarea', '॔')" value="॔"></td>
+<td><input type="button" class="bt" title="candra bindu" onclick="insertText('transliterateTextarea', 'ँ')" value="ँ"></td>
+<td><input type="button" class="bt" title="anusvara" onclick="insertText('transliterateTextarea', 'ं')" value="ं"></td>
+<td><input type="button" class="bt" title="visarga" onclick="insertText('transliterateTextarea', 'ः')" value="ः"></td>
+<td><input type="button" class="bt" title="nukta" onclick="insertText('transliterateTextarea', '़')" value="़"></td>
+</tr>
+</tbody></table>
+<br> <table class="tab-kb">
+<tbody><tr>
+<td><input type="button" class="bt" title="danda" onclick="insertText('transliterateTextarea', '।')" value="।"></td>
+<td><input type="button" class="bt" title="double danda" onclick="insertText('transliterateTextarea', '॥')" value="॥"></td>
+<td><input type="button" class="bt" title="avagraha" onclick="insertText('transliterateTextarea', 'ऽ')" value="ऽ"></td>
+<td><input type="button" class="bt" title="symbole d'abréviation" onclick="insertText('transliterateTextarea', '॰')" value="॰"></td>
+<td><input type="button" class="bt" title="om" onclick="insertText('transliterateTextarea', 'ॐ')" value="ॐ"></td>
+</tr>
+</tbody></table>
+<br> <table class="tab-kb">
+<tbody><tr class="arial">
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '०')" value="०"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '१')" value="१"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '२')" value="२"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '३')" value="३"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '४')" value="४"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '५')" value="५"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '६')" value="६"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '७')" value="७"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '८')" value="८"></td>
+<td><input type="button" class="bt" onclick="insertText('transliterateTextarea', '९')" value="९"></td>
+</tr>
+</tbody></table>
+</tbody>
+</table>
+</td>
+
+</div>
+
+<!-- footer -->
+  <footer class="mastfoot mt-auto">
+    <div class="inner" >
+      <p >Created by Varun Khanna, Anya Chaudari, and Sidhika Tripathee</p>
+    </div>
+  </footer>
+
+</div>
+  </body>
+
+
+  <script type="text/javascript">
+
+  function convert(event){
+
+    var elem = document.getElementById('transliterateTextarea');
+    //runs conversion after spacebar is pressed
+    if(event.keyCode == 32){
+
+      elem.value = Sanscript.t(elem.value, 'hk', 'devanagari');
+    }
+  }
+
+    function insertText(elemID, text)
+    {
+      var elem = document.getElementById(elemID);
+      elem.value += text;
+    }
+
+    //var myVar = setInterval(convert, 1000);
+
+  </script>
+</html>
