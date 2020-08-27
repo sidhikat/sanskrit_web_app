@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A learning tool for all those interesting in learning the Sanskrit language.",
   "private": "true",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/sidhikat/sanskrit_web_app#readme",
   "dependencies": {
-    "@sanskrit-coders/sanscript": "^1.1.0"
+    "@sanskrit-coders/sanscript": "^1.1.0",
+    "atomize": "^1.0.26",
+    "react-transition-group": "^4.4.1"
   }
 }
